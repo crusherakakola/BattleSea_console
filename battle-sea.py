@@ -274,18 +274,7 @@ class Ship:
     def get_direction(self):
         return self.direction
 
-    @property
-    def dots(self):
-        dots = []
-        if self.direction == vert:
-            for i in range(self.get_length()):
-                dots.append(Coordinates(self.get_start_dot().x + i + 1, self.get_start_dot().y + 1))
-        elif self.direction == hor:
-            for i in range(self.length):
-                dots.append(Coordinates(self.get_start_dot().x + 1, self.get_start_dot().y + i + 1))
-        else:
-            raise InvalidValueException
-        return dots
+
 
 
 class Player:
