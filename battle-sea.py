@@ -275,8 +275,6 @@ class Ship:
         return self.direction
 
 
-
-
 class Player:
     def __init__(self, board, enemy_board):
         self.board = board
