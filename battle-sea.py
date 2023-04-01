@@ -24,11 +24,6 @@ class CoordinateOutException(BoardException):
         return '\nВы пытаетесь выбрать точку за пределами игрового поля!\n'
 
 
-class InvalidValueException(BoardException):
-    def __str__(self):
-        return '\nНекорректный ввод!\n'
-
-
 class InvalidCoordinateException(BoardException):
     def __str__(self):
         return '\nНекорректный ввод координат!\n'
