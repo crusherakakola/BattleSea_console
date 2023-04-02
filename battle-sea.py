@@ -249,10 +249,6 @@ class BoardDot:
         elif self.miss == 1:
             self.status = 'T'
 
-    def change_outline(self):
-        if self.outline == 1:
-            self.status = '▪'
-
 
 class Ship:
     def __init__(self, length, start_dot, direction):
